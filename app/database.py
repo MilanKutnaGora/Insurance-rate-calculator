@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Получение URL базы данных из переменных окружения
-DATABASE_URL = getenv("DATABASE_URL", "postgresql://postgres:postgres@db/insurance")
+DATABASE_URL = getenv("DATABASE_URL")
 
 # Создание движка SQLAlchemy
 engine = create_engine(DATABASE_URL)
